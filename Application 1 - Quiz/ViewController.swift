@@ -12,34 +12,29 @@ class ViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
-    let questions: [String] = ["What is your name?",
-                                "What is your quest?",
-                                "What is your favourite colour?"]
-    let answers: [String] = ["Chloe",
-                                "To learn iOS dev",
-                                "Turquoise"]
+    let questionsAnswersArray: [(Question:String,Answer:String)] = AnswersModel.answersArray
     var currentQuestionIndex: Int = 0
     
     @IBAction func showNextQuestion(sender: AnyObject) {
         ++currentQuestionIndex
-        if currentQuestionIndex == questions.count {
+        if currentQuestionIndex == questionsAnswersArray.count {
                 currentQuestionIndex = 0
         }
-        let question: String = questions[currentQuestionIndex]
+        let question: String = questionsAnswersArray[currentQuestionIndex].Question
         questionLabel.text = question
         answerLabel.text = "???"
         
         
     }
     @IBAction func showAnswer(sender: AnyObject) {
-        let answer: String = answers[currentQuestionIndex]
+        let answer: String = questionsAnswersArray[currentQuestionIndex].Answer
         answerLabel.text = answer
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = questions[currentQuestionIndex]
+        questionLabel.text = questionsAnswersArray[currentQuestionIndex].Question
     }
 
 

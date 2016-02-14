@@ -14,6 +14,7 @@
 		89A3DB301C6F7D6D005897F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89A3DB2E1C6F7D6D005897F0 /* LaunchScreen.storyboard */; };
 		89A3DB3B1C6F7D6D005897F0 /* Application_1___QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A3DB3A1C6F7D6D005897F0 /* Application_1___QuizTests.swift */; };
 		89A3DB461C6F7D6D005897F0 /* Application_1___QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A3DB451C6F7D6D005897F0 /* Application_1___QuizUITests.swift */; };
+		89A3DB561C703541005897F0 /* AnswersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A3DB551C703541005897F0 /* AnswersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		89A3DB411C6F7D6D005897F0 /* Application 1 - QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Application 1 - QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A3DB451C6F7D6D005897F0 /* Application_1___QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application_1___QuizUITests.swift"; sourceTree = "<group>"; };
 		89A3DB471C6F7D6D005897F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89A3DB551C703541005897F0 /* AnswersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				89A3DB291C6F7D6D005897F0 /* Main.storyboard */,
 				89A3DB2C1C6F7D6D005897F0 /* Assets.xcassets */,
 				89A3DB271C6F7D6D005897F0 /* ViewController.swift */,
+				89A3DB551C703541005897F0 /* AnswersModel.swift */,
 				89A3DB2E1C6F7D6D005897F0 /* LaunchScreen.storyboard */,
 				89A3DB311C6F7D6D005897F0 /* Info.plist */,
 			);
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A3DB281C6F7D6D005897F0 /* ViewController.swift in Sources */,
+				89A3DB561C703541005897F0 /* AnswersModel.swift in Sources */,
 				89A3DB261C6F7D6D005897F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
